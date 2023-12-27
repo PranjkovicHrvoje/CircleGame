@@ -51,7 +51,9 @@ const mouseMovement = (mouseEvent: MouseEvent) => {
     const distance = Math.sqrt(Math.pow(distanceX, 2) + Math.pow(distanceY, 2))
     totalDist = totalDist + distance;
     average = totalDist / i;
-    accuracy = 100-((Math.abs(startingRad - average))/average)*100;
+    accuracy = 100-(((Math.abs(startingRad - average))/average)*100);
+    const resultDiv = document.querySelector('.bottom-right') as HTMLDivElement;
+    resultDiv.innerHTML = (`RESULT: ${accuracy.toFixed(2)}%`);
     console.log(i, distance, accuracy);
 };
 document.addEventListener('mousemove', mouseMovement);
