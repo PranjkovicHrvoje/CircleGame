@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Set a background color for the body */
+  }
+
+  #center {
+    width: 5px;
+    height: 5px;
+    background-color: #3498db; /* Set a background color for the div */
+  }
+  .bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px; /* Optional: Add some margin for better spacing */
+    font-size: 2em;
+}
